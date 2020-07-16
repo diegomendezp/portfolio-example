@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../fonts/Lato/Lato-Bold.ttf");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+  font-weight: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+p, h1, h2, h3 {
+  margin: 0
+}
+
+.logo-container{
+  display: flex;
+  width: 94%;
+  margin: 0 auto;
+  justify-content: flex-start;
+  padding-top: 40px;
+  max-width: 1440px;
+}
+
+.page-container {
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 106px;
+  max-width: 1440px;
+}
+
+h1, h2{
+  font-size: 60px;
+  line-height: 84px;
+  font-family: "Lato-Bold";
+  width: 80%;
+}
+
+.projects-container {
+  margin: 95px 64px 0;
+}
+
+.filters {
+  margin-bottom: 54px;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-p {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.filter-p:not(:last-child) {
+  margin-right: 160px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+.project-image, .project-description {
+  width: 50%;
+}
+
+.project:not(:last-child) {
+  margin-bottom: 96px;
+}
+
+.description-right {
+  margin-left: 89px;
+}
+
+.description-left {
+  margin-right: 89px;
+}
+
+p {
+  font-family: "Lato-Regular";
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.project-title {
+  font-size: 30px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: "Lato-Regular";
+  margin-bottom: 22px;
+}
+
+.project-info {
+  margin-bottom: 25px;
+}
+
+.project-button {
+  width: 185px;
+  min-height: 56px;
+  border: 1px solid #000000;
+  font-family: "Lato-Regular";
+  font-size: 20px;
+  line-height: 28px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.project-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.project-button:active {
+  background-color: #5F5F5F;
+  color: white;
+}
+
+a {
+  font-size: 20px;
+  line-height: 28px;
+  color: black;
+  font-family: "Lato-Regular";
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+a:active {
+  color: #7F7F7F;
+}
+
+a:visited {
+  color: black;
+}
+
+footer {
+  margin-top: 136px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 89px;
+}
+
+.footer-p {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.footer-description {
+  width: 40%;
+}
+
+.footer-link {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+}
+
+.media-links {
+  margin-top: 32px;
+  text-align: right;
+}
+
+.media-links a {
+  text-decoration: none;
+}
+
+.media-links img {
+  object-fit: cover;
+}
+
+.media-links img:not(:last-child) {
+  margin-right: 33px;
+}
+
+@media only screen and (max-width: 415px) {
+  .logo-container{
+    display: flex;
+    width: 96%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    padding-top: 16px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .logo-container img{
+    width: 130px;
+    height: 32px;
+  }
+  
+  .page-container {
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 48px;
+    max-width: 100%;
+  }
+
+  h1, h2 {
+    font-size: 20px;
+    line-height: 28px;
+    width: 100%;
+  }
+
+  .filters {
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .filter-p {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .filter-p:not(:last-child) {
+    margin-right: 48px;
+  }
+
+  .projects-container {
+    margin: 58px 0px 0;
+  }
+
+  .project {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .project-image {
+    width: 100%;
+
+  }
+  .project-description {
+    width: 100%;
+    padding: 24px 8px 0;
+  }
+  
+  .project:not(:last-child) {
+    margin-bottom: 48px;
+  }
+  
+  .description-right {
+    margin-left: 0;
+  }
+  
+  .description-left {
+    margin-right: 0px;
+  }
+
+  .project-title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "Lato-Regular";
+    margin-bottom: 16px;
+  }
+  
+  p {
+    font-family: "Lato-Regular";
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .project-info {
+    margin-bottom: 24px;
+  }
+
+  .project-description a {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .project-button {
+    min-height: 32px;
+    width: 151px;
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 30px;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding-bottom: 24px;
+  }
+
+  .footer-description, .footer-media {
+    width: 100%;
+  }
+
+  .footer-p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .footer-links {
+    margin-top: 25px;
+  }
+
+  .footer-link {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .media-links {
+    margin-top: 32px;
+    text-align: right;
+    text-align: center;
+  }
+  
+  .media-links a {
+    text-decoration: none;
+  }
+  
+  .media-links img {
+    object-fit: cover;
+  }
+  
+  .media-links img:not(:last-child) {
+    margin-right: 33px;
+  }
+}
